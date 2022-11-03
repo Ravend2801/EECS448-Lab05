@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>CSS Manipulation</title>
+        <link rel="stylesheet" type="text/css" href="Manipulation.css">
+	</head>
+	<body>
+        <h1>CSS Manipulation</h1>
+        <p class = "dummy">
+            This is some dummy text:<br>
+            If you ever what Howls Moving Castle, you might wonder why Sophie the Hatter keeps changing age through out the movie. This is the reason why!<br>
+            In the beginning, Sophie wasnot a very confident young woman. She rarely spoke her mind and kept most of her thoughts to herself. That is the attitude that made the curse work, because Sophie was already acting like an elderly person. However, when she started to stand up for herself and others, Sophie’s age started to change too. Finally, when she comes to terms with who she really is and who she loves, Sophie was able to break the curse and go back to her real age.
+        </p>
+        <div id="contents">
+            <div id="border">             
+                <h3>Border settings:</h3>
+                <form>
+                    <div>Red value (0-255): <input type="number" id="borderR" name="border-red" min="0" max="255"></div>
+                    <div>Green value (0-255): <input type="number" id="borderG" name="border-green" min="0" max="255"></div>
+                    <div>Blue value (0-255): <input type="number" id="borderB" name="border-blue" min="0" max="255"></div>
+                    <div>Width: <input type="number" id="borderW" name="border-width"></div>
+                </form>
+            </div>
+            <div id="background">
+                <h3>Background settings: </h3>
+                <form>
+                    <div>Red value (0-255): <input type="number" id="bgR" name="bg-red" min="0" max="255"></div>
+                    <div>Green value (0-255): <input type="number" id="bgG" name="bg-green" min="0" max="255"></div>
+                    <div>Blue value (0-255): <input type="number" id="bgB" name="bg-blue" min="0" max="255"></div>
+                </form>
+            </div>
+            <div id="button">
+                <button type="button" name="submit" onclick="checkValues(colorInputs); transform();">Let's the magic happens!</button>
+            </div>
+        </div>
+        <script src="Malipulation.js"></script>
+    </body>
+</html>
